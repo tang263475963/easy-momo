@@ -4,24 +4,21 @@ import "./Header.css";
 
 class Header extends Component {
     render(){
-        var Navbar ={
-          display: 'inlineBlock',
-          BackgroundColor: '#555',
-          color: '#fff',
-          fontSize: 25,
-          padding: 10
-
-        }
 
         return (
-            <div style={{display: 'block', backgroundColor:'#ffc107', fontSize: 25, padding:7}}>  
-              <Link to ="/" style={Navbar}>Home</Link>
-              <Link to ="/about" style={Navbar}>About</Link>
-              <Link to ="/signin" style={Navbar}>Signin</Link>
-              <Link to ="/signup" style={Navbar}>Signup</Link>
+            <div className="navbar">  
+              <Link to ="/home"  className="navlink"> Home </Link>
+              <Link to ="/about" className="navlink"> About </Link>
+              <Link to ="/categories" className="navlink"> Categories </Link>
+              <Link to ="/product" className="navlink"> Product </Link>
+              <Link to ="/signin" className="navlink" style={{float:'right'}}>Signin</Link>
+              <Link to ="/signup" className="navlink" style={{float:'right'}}>Signup</Link>
+              <Link to ="/profile" className="navlink" style={{float:'right'}}>Profile</Link>
             </div>
     )
   }
 }
 
 export default Header;
+
+//#ffc107 สีส้มเหลือง
